@@ -1,0 +1,40 @@
+body,html {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family: sans-serif;
+}
+h1 {
+  color: #616161;
+
+}
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cogs {
+  transition: 1s;
+  animation: rotate 4s ease infinite;
+  width: 100px;
+  height: 100px;
+  background-image: url(./cogs.svg);
+  background-size: 100%;
+  background-position: center;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg)
+  }
+  to {
+    transform: rotate(360deg)
+  }
+}
+
+@media screen and (min-width: 500px) {
+
+}
